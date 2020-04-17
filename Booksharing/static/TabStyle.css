@@ -1,0 +1,36 @@
+.t1 {
+    margin-top: 2%;
+    border-collapse: collapse;
+    width: 800px;
+    position: relative;
+}
+
+#r1 {
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+td {
+    color: black;
+    padding: 4px;
+    text-align: center;
+    border: solid 1px black;
+}
+tr:nth-child(odd) td{
+   background-color:#252525;
+   color: whitesmoke;
+    
+}
+
+tr:nth-child(even) td{
+   background-color:whitesmoke;
+    
+}
+
+
+#l1 {
+    visibility: hidden;padding:10px ;background-color:#252525;color: aliceblue;width: 50%;position: relative;
+
+}
+
+

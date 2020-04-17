@@ -1,0 +1,82 @@
+body
+{
+	margin:0;
+	pading:0;
+	font-family: sans-serif;
+	background: url(Wallpaper.jpg);
+	background-size:cover;
+	
+}
+.box
+{
+	position:absolute;
+	top:50%;
+	Left:50%;
+	transform:translate(-50%,-50%);
+	width: 500px;
+	height: 60px;
+	background: rgba(0,0,0,.30);
+	box-sizing: border-box;
+	box-shadow: 0 35px 30px rgba(0,0,0,.9);
+	border-radius: 30px;
+	color: white;
+}
+.box h2
+{
+	margin: 0 0 20px;
+	padding: 0;
+	color: white;
+	text-align: center;
+}
+ .box .inputBox
+{
+	position: relative;
+}
+.box .inputBox input
+{
+	width: 100%
+	padding: 10px 0;
+	font-size: 16px;
+	color: white;
+	margin-bottm: 30px;
+	border: none;
+	border: 1px solid #fff;
+	outline: none;	
+	background: transparent;
+}
+.box input[type="submit"]
+{
+	background: transparent;
+	border: 5px solid ;
+	outline: none;
+	color: white solid;
+	background: grey;
+	cursor: pointer;
+	
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

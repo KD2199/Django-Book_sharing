@@ -1,0 +1,106 @@
+{%extends 'master.html'%}
+{% load static%}
+
+{% block title%}Donate Book{%endblock%}
+
+{% block body%}
+
+
+<div style="margin-top: 2%;">
+    <center>
+        <div class="container" style="height:50%;width: 50%;position: relative; ">
+
+
+            <center>
+                <h1 style="color:#252525;margin-top: 1%;"><strong>Insert Book Details</strong></h1>
+            </center><br>
+            <center>
+                <form onsubmit="return check()" action="/home/Add/" method="post"
+                    style="border: solid black;position: relative;border-radius: 20px;"><br>
+                    {% csrf_token %}
+
+                    <center>
+                        <div>
+                            <center><input
+                                    style="width:250px;border: solid whitesmoke;border-width: 2px;padding: 6px;border-radius: 8px;cursor: pointer;"
+                                    id="oname" type="text" name="Oname" placeholder="Enter Owner's Name "><input
+                                    style="width:250px;border: solid whitesmoke;border-width: 2px;padding: 6px;border-radius: 8px;cursor: pointer;margin-left: 10px;"
+                                    id="uname" type="text" name="bname" placeholder="Enter Book Name "></center><br>
+
+                            <center><input
+                                    style="width:250px;border: solid whitesmoke;border-width: 2px;padding: 6px;border-radius: 8px;cursor: pointer;"
+                                    id="vid" type="text" name="ed" placeholder="Enter Edition "><input
+                                    style="width:250px;border: solid whitesmoke;border-width: 2px;padding: 6px;border-radius: 8px;cursor: pointer;margin-left: 10px;"
+                                    id="email" type="text" name="aname" placeholder="Enter AuthorName"></center><br>
+
+                            <center><input
+                                    style="width:250px;border: solid whitesmoke;border-width: 2px;padding: 6px;border-radius: 8px;cursor: pointer;"
+                                    id="mobile" type="text" name="pub" placeholder="Enter Publication"><input
+                                    style="width:250px;border: solid whitesmoke;border-width: 2px;padding: 6px;border-radius: 8px;cursor: pointer;margin-left: 10px;"
+                                    id="password" type="text" name="cat" placeholder="Enter BookCategory "></center><br>
+
+                            <center>
+                                <label for="Semester">Semester:</label>
+                                <select id="mobile" id="8" name="sem" width=200px border=solid>
+                                    <option>1</option> <br>
+                                    <option>2</option> <br>
+                                    <option>3</option> <br>
+                                    <option>4</option> <br>
+                                    <option>5</option><br>
+                                    <option>6</option> <br>
+                                    <option>7</option> <br>
+                                    <option>8</option> <br>
+                                </select> </center> <br>
+
+                            <center>
+                                <label for="Department">Department:</label>
+                                <select id="mobile" id="8" name="dep">
+                                    <option value="Computer">Computer</option> <br>
+                                    <option value="Mechanical">Mechanical</option> <br>
+                                    <option value="Robotics">Maths</option> <br>
+                                    <option value="EC">EC</option> <br>
+                                    <option value="MBA">MBA</option> <br>
+                                    <option value="Civil">Civil</option>
+                                </select> <br><br>
+                            </center>
+
+                            <center>
+                                <label for="Return">Return:</label>             
+				 <select id="mobile" id="8" name="rt">              
+				 <option value="false">No</option> 
+				 <option value="true">Yes</option> <br>
+                 </select><br><br>
+                 
+                            </center>
+
+
+                            <center>Book Image <input
+                                    style="width:250px;border: solid whitesmoke;border-width: 2px;padding: 6px;border-radius: 8px;cursor: pointer;"
+                                    type="file" name="fileToUpload1" value="Upload Image Of Book" rerequired></center>
+                            <br>
+
+                            <center> Book PDF: <input
+                                style="width:250px;border: solid whitesmoke;border-width: 2px;padding: 6px;border-radius: 8px;cursor: pointer;"
+                                 type="file" name="fileToUpload2" id=value="Upload PDF" required></center>
+                        <br>
+
+                            <center><input type="submit" value="Submit" class="btn btn-outline-dark"
+                                    style="width:130px;cursor: pointer;border-radius: 15px;padding: 6px;"></input>
+                            </center><br>
+                        </div>
+                    </center>
+                </form>
+
+                <center>
+                    <center><a href="/"><input type="submit" value="Go To Book Section" class="btn btn-outline-dark"
+                                style="width:180px;border-radius: 15px;padding: 6px;"></a></center>
+                </center>
+        </div>
+    </center>
+
+</div>
+
+
+</body>
+
+{%endblock%}

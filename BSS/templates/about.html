@@ -1,0 +1,75 @@
+{%extends 'master.html'%}
+{% load static%}
+{% block title%}About Us{%endblock%}
+
+
+{% block body%}
+
+
+<head>
+    <title>About Us</title>	
+	 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&amp;display=swap" rel="stylesheet">
+
+  <!--icon css-->
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/font-awesome.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/themify.css' %}">
+
+  <!--Slick slider css-->
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/slick.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/slick-theme.css' %}">
+
+  <!--Animate css-->
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/animate.css' %}">
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.css' %}">
+
+  <!-- Theme css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/color2.css' %}" media="screen" id="color">
+    <link rel="icon" href="{% static 'assets/images/favicon/favicon.ico' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'assets/images/favicon/favicon.ico' %}" type="image/x-icon">
+</head>
+<body>
+
+<!-- breadcrumb start -->
+<div class="breadcrumb-main ">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="breadcrumb-contain">
+                    <div>
+                        <h2>about</h2>
+                        <ul>
+                            <li><a href="/">home</a></li>
+                            <li><i class="fa fa-angle-double-right"></i></li>
+                            <li><a href="#">about</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb End -->
+
+<!-- about section start -->
+<section class="about-page section-big-py-space">
+    <div class="custom-container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-section"><img src="{% static 'assets/images/blog/1.jpg' %}" class="img-fluid   w-100"></div>
+            </div>
+            <div class="col-lg-6">
+                <h4>Digital Platform for Sharing Books</h4>
+                <p class="mb-2"> It is well said that <b>sharing</b> gives happiness. Books are form of pure knowledge and help us increase self confidence, boost memory and imagination power.</p>
+                <p class="mb-2">Book can be the best gift for an individual. Apart from gifting sharing books is also important. In organizations like schools and colleges, this platform will allow the students and faculty members to share and donate their unused or completed books. </p>
+                <p class="mb-2">The used/unused books, printouts, journals, manuals and every type of study material can be shared via platform provided by us. So, they can be used by the needy instead of being discarded.</p>
+                <p>The books that are not available in the market or are very expensive, if available with any member can help the other to gain guidance and knowledge. Waste of paper any money for printing study material can be decreased. The inventory of books will increase for the institute though being distributed in nature.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about section end -->
+
+</body>
+{%endblock%}

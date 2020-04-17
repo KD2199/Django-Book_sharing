@@ -1,0 +1,185 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="pixelstrap">
+    <link rel="icon" href="{% static 'login/assets/images/favicon/favicon.ico' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'login/assets/images/favicon/favicon.ico' %}" type="image/x-icon">
+    
+    <title>Account</title>
+
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="{% static 'login/assets/css/font-awesome.css' %}">
+
+    <!-- Flag icon-->
+    <link rel="stylesheet" type="text/css" href="{% static 'login/assets/css/themify.css' %}">
+
+    <!-- slick icon-->
+    <link rel="stylesheet" type="text/css" href="{% static 'login/assets/css/slick.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'login/assets/css/slick-theme.css' %}">
+
+    <!-- jsgrid css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'login/assets/css/jsgrid.css' %}">
+
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'login/assets/css/bootstrap.css' %}">
+
+    <!-- App css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'login/assets/css/admin.css' %}">
+    <style>
+        body {
+            background: white;
+        }
+
+        .rounded {
+            width: 100px;
+            margin: auto;
+        }
+
+        .rounded img {
+            border-radius: 50%
+        }
+    </style>
+</head>
+
+<body>
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper">
+        <div class="authentication-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 p-0 card-left">
+                        <div class="card bg-primary">
+                            <div class="rounded">
+                                <img src="{% static 'assets/images/LOGO.jpg' %}" height=100px , width=100px> <br> <br>
+                                <br>
+                            </div>
+                            <div class="single-item">
+                                <div>
+                                    <div>
+                                        <h3>Welcome to Website</h3>
+                                        <p> Life is a book, there are thousand pages that are still left to read.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <h3>Welcome to Website</h3>
+                                        <p>A great book should leave you with many experiences, and slightly exhuasted
+                                            at the end. You live several lives while reading.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <h3>Welcome to Website</h3>
+                                        <p> If one can't enjoy reading a book over and over again , there is no use in
+                                            reading it at all.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 p-0 card-right">
+                        <div class="card tab2-card">
+                            <div class="card-body">
+                                <ul class="nav nav-tabs nav-material" id="top-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="top-profile-tab" data-toggle="tab"
+                                            href="#top-profile" role="tab" aria-controls="top-profile"
+                                            aria-selected="true"><span class="icon-user mr-2"></span>Login</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="top-tabContent">
+                                    <div class="tab-pane fade show active" id="top-profile" role="tabpanel"
+                                        aria-labelledby="top-profile-tab">
+                                        <form class="form-horizontal auth-form" action="/home/login/" method="post">
+                                            {% csrf_token %}
+                                            <div class="form-group">
+                                                <input required="" name="username" type="text" class="form-control"
+                                                    placeholder="Username" id="exampleInputEmail1">
+                                            </div>
+                                            <div class="form-group">
+                                                <input required="" name="password" type="password" class="form-control"
+                                                    placeholder="Password">
+                                            </div>
+                                            <div>
+                                                {% for message in messages %}
+                                                <ul style="color:red">
+                                                    <li><b>*{{message}}*</b></li>
+                                                </ul>
+                                                {% endfor %}
+                                            </div>
+                                            
+                                            <div class="form-button">
+                                                <button class="btn btn-primary" type="submit">Login</button>
+                                            </div>
+                                            <div class="form-footer">
+                                                <span>Or Login up with social platforms</span>
+                                                <ul class="social">
+                                                    <li><a class="icon-facebook" href="#"></a></li>
+                                                    <li><a class="icon-twitter" href="#"></a></li>
+                                                    <li><a class="icon-instagram" href="#"></a></li>
+                                                    <li><a class="icon-pinterest" href="#"></a></li>
+                                                </ul>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="/" class="btn btn-primary back-btn"><i data-feather="arrow-left"></i>back</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- latest jquery-->
+    <script src="{% static 'login/assets/js/jquery-3.3.1.min.js' %}"></script>
+
+    <!-- Bootstrap js-->
+    <script src="{% static 'login/assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'login/assets/js/bootstrap.js' %}"></script>
+
+    <!-- feather icon js-->
+    <script src="{% static 'login/assets/js/icons/feather-icon/feather.min.js' %}"></script>
+    <script src="{% static 'login/assets/js/icons/feather-icon/feather-icon.js' %}"></script>
+
+    <!-- Sidebar jquery-->
+    <script src="{% static 'login/assets/js/sidebar-menu.js' %}"></script>
+    <script src="{% static 'login/assets/js/slick.js' %}"></script>
+
+    <!-- Jsgrid js-->
+    <script src="{% static 'login/assets/js/jsgrid/jsgrid.min.js' %}"></script>
+    <script src="{% static 'login/assets/js/jsgrid/griddata-invoice.js' %}"></script>
+    <script src="{% static 'login/assets/js/jsgrid/jsgrid-invoice.js' %}"></script>
+
+    <!-- lazyload js-->
+    <script src="{% static 'login/assets/js/lazysizes.min.js' %}"></script>
+
+    <!--right sidebar js-->
+    <script src="{% static 'login/assets/js/chat-menu.js' %}"></script>
+
+    <!--script admin-->
+    <script src="{% static 'login/assets/js/admin-script.js' %}"></script>
+    <script>
+        $('.single-item').slick({
+            arrows: false,
+            dots: true
+        }
+        );
+    </script>
+</body>
+
+</html>
