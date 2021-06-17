@@ -1,5 +1,3 @@
 # Django-Book_sharing
 
-Build Simple Booksharing website using django feamework.
-
-If you want to contibute in my project send the pull request to me.
+A Large SIH project required an intuitive interface of book sharing for university students and faculty.Book sharing is a web application where students or faculty can donate their unused books or stationary for students of the institutes.
